@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E8FBD77C21DE5AC7003F71D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD77B21DE5AC7003F71D3 /* AppDelegate.m */; };
-		E8FBD77F21DE5AC7003F71D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD77E21DE5AC7003F71D3 /* ViewController.m */; };
+		E8FBD77F21DE5AC7003F71D3 /* PeopleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD77E21DE5AC7003F71D3 /* PeopleListViewController.m */; };
 		E8FBD78221DE5AC7003F71D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FBD78021DE5AC7003F71D3 /* Main.storyboard */; };
 		E8FBD78521DE5AC7003F71D3 /* PeopleList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD78321DE5AC7003F71D3 /* PeopleList.xcdatamodeld */; };
 		E8FBD78721DE5AC9003F71D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FBD78621DE5AC9003F71D3 /* Assets.xcassets */; };
@@ -19,8 +19,10 @@
 		E8FBD7B221DE5BDB003F71D3 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7B121DE5BDB003F71D3 /* NetworkManager.m */; };
 		E8FBD7B621DE601A003F71D3 /* PeopleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */; };
 		E8FBD7B921DE60BB003F71D3 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7B821DE60BB003F71D3 /* StorageManager.m */; };
-		E8FBD7BE21DE65C1003F71D3 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7BC21DE65C1003F71D3 /* Person+CoreDataClass.m */; };
-		E8FBD7BF21DE65C1003F71D3 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7BD21DE65C1003F71D3 /* Person+CoreDataProperties.m */; };
+		E8FBD7C321DE7F0C003F71D3 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7C221DE7F0C003F71D3 /* PersonCell.m */; };
+		E8FBD7C721DE8137003F71D3 /* PeopleListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7C621DE8137003F71D3 /* PeopleListTableViewDataSource.m */; };
+		E8FBD7CC21DE8975003F71D3 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CA21DE8975003F71D3 /* Person+CoreDataClass.m */; };
+		E8FBD7CD21DE8975003F71D3 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,8 @@
 		E8FBD77721DE5AC7003F71D3 /* PeopleList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FBD77A21DE5AC7003F71D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8FBD77B21DE5AC7003F71D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E8FBD77D21DE5AC7003F71D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E8FBD77E21DE5AC7003F71D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8FBD77D21DE5AC7003F71D3 /* PeopleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleListViewController.h; sourceTree = "<group>"; };
+		E8FBD77E21DE5AC7003F71D3 /* PeopleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleListViewController.m; sourceTree = "<group>"; };
 		E8FBD78121DE5AC7003F71D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8FBD78421DE5AC7003F71D3 /* PeopleList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeopleList.xcdatamodel; sourceTree = "<group>"; };
 		E8FBD78621DE5AC9003F71D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,10 +66,14 @@
 		E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleProvider.m; sourceTree = "<group>"; };
 		E8FBD7B721DE60BB003F71D3 /* StorageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
 		E8FBD7B821DE60BB003F71D3 /* StorageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
-		E8FBD7BA21DE65C1003F71D3 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
-		E8FBD7BB21DE65C1003F71D3 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
-		E8FBD7BC21DE65C1003F71D3 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
-		E8FBD7BD21DE65C1003F71D3 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E8FBD7C121DE7F0C003F71D3 /* PersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+		E8FBD7C221DE7F0C003F71D3 /* PersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
+		E8FBD7C521DE8137003F71D3 /* PeopleListTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleListTableViewDataSource.h; sourceTree = "<group>"; };
+		E8FBD7C621DE8137003F71D3 /* PeopleListTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleListTableViewDataSource.m; sourceTree = "<group>"; };
+		E8FBD7C821DE8975003F71D3 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E8FBD7C921DE8975003F71D3 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		E8FBD7CA21DE8975003F71D3 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +124,12 @@
 		E8FBD77921DE5AC7003F71D3 /* PeopleList */ = {
 			isa = PBXGroup;
 			children = (
+				E8FBD7C021DE7EE7003F71D3 /* View */,
 				E8FBD7B321DE5FF2003F71D3 /* Model */,
 				E8FBD7AF21DE5BBC003F71D3 /* Networking */,
 				E8FBD77A21DE5AC7003F71D3 /* AppDelegate.h */,
 				E8FBD77B21DE5AC7003F71D3 /* AppDelegate.m */,
-				E8FBD77D21DE5AC7003F71D3 /* ViewController.h */,
-				E8FBD77E21DE5AC7003F71D3 /* ViewController.m */,
+				E8FBD7C421DE7F3F003F71D3 /* Controller */,
 				E8FBD78021DE5AC7003F71D3 /* Main.storyboard */,
 				E8FBD78621DE5AC9003F71D3 /* Assets.xcassets */,
 				E8FBD78821DE5AC9003F71D3 /* LaunchScreen.storyboard */,
@@ -164,16 +170,36 @@
 		E8FBD7B321DE5FF2003F71D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E8FBD7C821DE8975003F71D3 /* Person+CoreDataProperties.h */,
+				E8FBD7C921DE8975003F71D3 /* Person+CoreDataClass.h */,
+				E8FBD7CA21DE8975003F71D3 /* Person+CoreDataClass.m */,
+				E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */,
 				E8FBD7B421DE601A003F71D3 /* PeopleProvider.h */,
 				E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */,
 				E8FBD7B721DE60BB003F71D3 /* StorageManager.h */,
 				E8FBD7B821DE60BB003F71D3 /* StorageManager.m */,
-				E8FBD7BA21DE65C1003F71D3 /* Person+CoreDataProperties.h */,
-				E8FBD7BB21DE65C1003F71D3 /* Person+CoreDataClass.h */,
-				E8FBD7BC21DE65C1003F71D3 /* Person+CoreDataClass.m */,
-				E8FBD7BD21DE65C1003F71D3 /* Person+CoreDataProperties.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E8FBD7C021DE7EE7003F71D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8FBD7C121DE7F0C003F71D3 /* PersonCell.h */,
+				E8FBD7C221DE7F0C003F71D3 /* PersonCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8FBD7C421DE7F3F003F71D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8FBD77D21DE5AC7003F71D3 /* PeopleListViewController.h */,
+				E8FBD77E21DE5AC7003F71D3 /* PeopleListViewController.m */,
+				E8FBD7C521DE8137003F71D3 /* PeopleListTableViewDataSource.h */,
+				E8FBD7C621DE8137003F71D3 /* PeopleListTableViewDataSource.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,15 +332,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FBD7C321DE7F0C003F71D3 /* PersonCell.m in Sources */,
 				E8FBD78521DE5AC7003F71D3 /* PeopleList.xcdatamodeld in Sources */,
-				E8FBD77F21DE5AC7003F71D3 /* ViewController.m in Sources */,
+				E8FBD77F21DE5AC7003F71D3 /* PeopleListViewController.m in Sources */,
 				E8FBD78D21DE5AC9003F71D3 /* main.m in Sources */,
+				E8FBD7CC21DE8975003F71D3 /* Person+CoreDataClass.m in Sources */,
+				E8FBD7CD21DE8975003F71D3 /* Person+CoreDataProperties.m in Sources */,
 				E8FBD7B621DE601A003F71D3 /* PeopleProvider.m in Sources */,
-				E8FBD7BE21DE65C1003F71D3 /* Person+CoreDataClass.m in Sources */,
 				E8FBD7B221DE5BDB003F71D3 /* NetworkManager.m in Sources */,
 				E8FBD7B921DE60BB003F71D3 /* StorageManager.m in Sources */,
-				E8FBD7BF21DE65C1003F71D3 /* Person+CoreDataProperties.m in Sources */,
 				E8FBD77C21DE5AC7003F71D3 /* AppDelegate.m in Sources */,
+				E8FBD7C721DE8137003F71D3 /* PeopleListTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

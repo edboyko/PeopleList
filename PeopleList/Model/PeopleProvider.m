@@ -28,6 +28,7 @@
         _networkManager = networkManager;
         _storageManager = storageManager;
         _currentPage = 1;
+        _hasMorePages = YES;
     }
     return self;
 }
@@ -39,13 +40,14 @@
         _networkManager = [[NetworkManager alloc] init];
         _storageManager = [[StorageManager alloc] init];
         _currentPage = 1;
+        _hasMorePages = YES;
     }
     return self;
 }
 
--(void)getPeopleAtPage:(NSInteger)page withCompletionBlock:(void (^)(NSArray* _Nullable people, NSError* _Nullable error))completion {
+-(void)getPeopleWithCompletionBlock:(void (^)(NSArray* _Nullable people, NSError* _Nullable error))completion {
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:PeopleProvider.baseURLAddress];
-    NSString *pageString = @(page).stringValue;
+    NSString *pageString = @(self.currentPage).stringValue;
     urlComponents.queryItems = @[
                                  [NSURLQueryItem queryItemWithName:@"page" value:pageString]
                                  ];

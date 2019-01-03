@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init;
 - (instancetype)initWithNetworkManager:(NetworkManager*)networkManager andStorageManager:(StorageManager*)storageManager;
 
--(void)getPeopleAtPage:(NSInteger)page withCompletionBlock:(void (^)(NSArray* _Nullable people, NSError* _Nullable error))completion;
+-(void)getPeopleWithCompletionBlock:(void (^)(NSArray* _Nullable people, NSError* _Nullable error))completion;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -34,7 +34,7 @@
 
 -(NSArray<Person*>*)getSavedPeopleWithPredicate:(nullable NSPredicate*)predicate {
     NSFetchRequest *request = Person.fetchRequest;
-    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:NO];
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"dateCreated" ascending:YES];
     request.sortDescriptors = @[descriptor];
     request.predicate = predicate;
     request.fetchBatchSize = 30;
@@ -98,6 +98,7 @@
     person.eyeColor = userDictionary[@"eye_color"];
     person.birthYear = userDictionary[@"birth_year"];
     person.gender = userDictionary[@"gender"];
+    person.dateCreated = [NSDate new];
 }
 
 -(NSManagedObjectContext*)mainContext {

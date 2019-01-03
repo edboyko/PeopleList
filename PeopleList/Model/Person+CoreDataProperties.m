@@ -23,5 +23,6 @@
 @dynamic eyeColor;
 @dynamic birthYear;
 @dynamic gender;
+@dynamic dateCreated;
 
 @end

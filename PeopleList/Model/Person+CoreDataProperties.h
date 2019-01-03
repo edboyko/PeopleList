@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *eyeColor;
 @property (nullable, nonatomic, copy) NSString *birthYear;
 @property (nullable, nonatomic, copy) NSString *gender;
+@property (nullable, nonatomic, copy) NSDate *dateCreated;
 
 @end
 
