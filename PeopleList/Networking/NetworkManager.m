@@ -34,7 +34,7 @@
     return self;
 }
 
--(void)loadDataFromURL:(NSURL*)url withCompletionBlock:(void (^)(NSData* data, NSError* error))completion {
+-(void)loadDataFromURL:(NSURL*)url withCompletionBlock:(void (^)(NSData* _Nullable data, NSError* _Nullable error))completion {
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     _dataTask = [self.session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         completion(data, error);

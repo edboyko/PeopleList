@@ -17,6 +17,10 @@
 		E8FBD79721DE5AC9003F71D3 /* PeopleListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD79621DE5AC9003F71D3 /* PeopleListTests.m */; };
 		E8FBD7A221DE5AC9003F71D3 /* PeopleListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7A121DE5AC9003F71D3 /* PeopleListUITests.m */; };
 		E8FBD7B221DE5BDB003F71D3 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7B121DE5BDB003F71D3 /* NetworkManager.m */; };
+		E8FBD7B621DE601A003F71D3 /* PeopleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */; };
+		E8FBD7B921DE60BB003F71D3 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7B821DE60BB003F71D3 /* StorageManager.m */; };
+		E8FBD7BE21DE65C1003F71D3 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7BC21DE65C1003F71D3 /* Person+CoreDataClass.m */; };
+		E8FBD7BF21DE65C1003F71D3 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7BD21DE65C1003F71D3 /* Person+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,14 @@
 		E8FBD7A321DE5AC9003F71D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8FBD7B021DE5BDB003F71D3 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		E8FBD7B121DE5BDB003F71D3 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		E8FBD7B421DE601A003F71D3 /* PeopleProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleProvider.h; sourceTree = "<group>"; };
+		E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeopleProvider.m; sourceTree = "<group>"; };
+		E8FBD7B721DE60BB003F71D3 /* StorageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
+		E8FBD7B821DE60BB003F71D3 /* StorageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
+		E8FBD7BA21DE65C1003F71D3 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E8FBD7BB21DE65C1003F71D3 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		E8FBD7BC21DE65C1003F71D3 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		E8FBD7BD21DE65C1003F71D3 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,7 @@
 		E8FBD77921DE5AC7003F71D3 /* PeopleList */ = {
 			isa = PBXGroup;
 			children = (
+				E8FBD7B321DE5FF2003F71D3 /* Model */,
 				E8FBD7AF21DE5BBC003F71D3 /* Networking */,
 				E8FBD77A21DE5AC7003F71D3 /* AppDelegate.h */,
 				E8FBD77B21DE5AC7003F71D3 /* AppDelegate.m */,
@@ -146,6 +159,21 @@
 				E8FBD7B121DE5BDB003F71D3 /* NetworkManager.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E8FBD7B321DE5FF2003F71D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8FBD7B421DE601A003F71D3 /* PeopleProvider.h */,
+				E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */,
+				E8FBD7B721DE60BB003F71D3 /* StorageManager.h */,
+				E8FBD7B821DE60BB003F71D3 /* StorageManager.m */,
+				E8FBD7BA21DE65C1003F71D3 /* Person+CoreDataProperties.h */,
+				E8FBD7BB21DE65C1003F71D3 /* Person+CoreDataClass.h */,
+				E8FBD7BC21DE65C1003F71D3 /* Person+CoreDataClass.m */,
+				E8FBD7BD21DE65C1003F71D3 /* Person+CoreDataProperties.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +309,11 @@
 				E8FBD78521DE5AC7003F71D3 /* PeopleList.xcdatamodeld in Sources */,
 				E8FBD77F21DE5AC7003F71D3 /* ViewController.m in Sources */,
 				E8FBD78D21DE5AC9003F71D3 /* main.m in Sources */,
+				E8FBD7B621DE601A003F71D3 /* PeopleProvider.m in Sources */,
+				E8FBD7BE21DE65C1003F71D3 /* Person+CoreDataClass.m in Sources */,
 				E8FBD7B221DE5BDB003F71D3 /* NetworkManager.m in Sources */,
+				E8FBD7B921DE60BB003F71D3 /* StorageManager.m in Sources */,
+				E8FBD7BF21DE65C1003F71D3 /* Person+CoreDataProperties.m in Sources */,
 				E8FBD77C21DE5AC7003F71D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

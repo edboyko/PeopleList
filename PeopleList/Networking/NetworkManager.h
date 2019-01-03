@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NetworkManager : NSObject
-
+- (instancetype)init;
+-(void)loadDataFromURL:(NSURL*)url withCompletionBlock:(void (^)(NSData* _Nullable data, NSError* _Nullable error))completion;
+-(void)cancel;
 @end
 
 NS_ASSUME_NONNULL_END
