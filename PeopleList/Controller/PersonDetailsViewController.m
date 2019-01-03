@@ -7,6 +7,7 @@
 //
 
 #import "PersonDetailsViewController.h"
+#import "ImageProvider.h"
 
 @interface PersonDetailsViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *personImageView;
@@ -38,6 +39,14 @@
     self.eyeColorLabel.text = self.person.eyeColor;
     self.birthYearLabel.text = self.person.birthYear;
     self.genderLabel.text = self.person.gender;
+    
+    ImageProvider *imageProvider = [[ImageProvider alloc]init];
+    NSString *encodedName = [self.person.name stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
+    [imageProvider downloadImageForName:encodedName completion:^(UIImage * _Nullable image) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.personImageView.image = image;
+        });
+    }];
 }
 
 @end

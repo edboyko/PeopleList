@@ -24,6 +24,7 @@
 		E8FBD7CC21DE8975003F71D3 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CA21DE8975003F71D3 /* Person+CoreDataClass.m */; };
 		E8FBD7CD21DE8975003F71D3 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */; };
 		E8FBD7D021DE8D97003F71D3 /* PersonDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CF21DE8D97003F71D3 /* PersonDetailsViewController.m */; };
+		E8FBD7D321DEA34B003F71D3 /* ImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7D221DEA34B003F71D3 /* ImageProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 		E8FBD7CE21DE8D97003F71D3 /* PersonDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDetailsViewController.h; sourceTree = "<group>"; };
 		E8FBD7CF21DE8D97003F71D3 /* PersonDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonDetailsViewController.m; sourceTree = "<group>"; };
+		E8FBD7D121DEA34B003F71D3 /* ImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageProvider.h; sourceTree = "<group>"; };
+		E8FBD7D221DEA34B003F71D3 /* ImageProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +141,6 @@
 				E8FBD78821DE5AC9003F71D3 /* LaunchScreen.storyboard */,
 				E8FBD78B21DE5AC9003F71D3 /* Info.plist */,
 				E8FBD78C21DE5AC9003F71D3 /* main.m */,
-				E8FBD78321DE5AC7003F71D3 /* PeopleList.xcdatamodeld */,
 			);
 			path = PeopleList;
 			sourceTree = "<group>";
@@ -166,6 +168,8 @@
 			children = (
 				E8FBD7B021DE5BDB003F71D3 /* NetworkManager.h */,
 				E8FBD7B121DE5BDB003F71D3 /* NetworkManager.m */,
+				E8FBD7D121DEA34B003F71D3 /* ImageProvider.h */,
+				E8FBD7D221DEA34B003F71D3 /* ImageProvider.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -181,6 +185,7 @@
 				E8FBD7B521DE601A003F71D3 /* PeopleProvider.m */,
 				E8FBD7B721DE60BB003F71D3 /* StorageManager.h */,
 				E8FBD7B821DE60BB003F71D3 /* StorageManager.m */,
+				E8FBD78321DE5AC7003F71D3 /* PeopleList.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				E8FBD77F21DE5AC7003F71D3 /* PeopleListViewController.m in Sources */,
 				E8FBD78D21DE5AC9003F71D3 /* main.m in Sources */,
 				E8FBD7CC21DE8975003F71D3 /* Person+CoreDataClass.m in Sources */,
+				E8FBD7D321DEA34B003F71D3 /* ImageProvider.m in Sources */,
 				E8FBD7CD21DE8975003F71D3 /* Person+CoreDataProperties.m in Sources */,
 				E8FBD7B621DE601A003F71D3 /* PeopleProvider.m in Sources */,
 				E8FBD7B221DE5BDB003F71D3 /* NetworkManager.m in Sources */,
