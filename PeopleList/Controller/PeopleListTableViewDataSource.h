@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class Person;
 @interface PeopleListTableViewDataSource : NSObject
+@property (readonly) NSMutableArray<Person*> *people;
 - (instancetype)initWithTableView:(UITableView*)tableView;
 -(void)getPeople;
 @end

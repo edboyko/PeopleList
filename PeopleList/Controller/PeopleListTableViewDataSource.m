@@ -45,7 +45,8 @@
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"PersonCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell"];
+    
     cell.textLabel.text = self.people[indexPath.row].name;
     
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ cm %@ kg", @(self.people[indexPath.row].height).stringValue, @(self.people[indexPath.row].mass).stringValue];

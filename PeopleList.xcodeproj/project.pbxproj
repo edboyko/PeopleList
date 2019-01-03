@@ -23,6 +23,7 @@
 		E8FBD7C721DE8137003F71D3 /* PeopleListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7C621DE8137003F71D3 /* PeopleListTableViewDataSource.m */; };
 		E8FBD7CC21DE8975003F71D3 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CA21DE8975003F71D3 /* Person+CoreDataClass.m */; };
 		E8FBD7CD21DE8975003F71D3 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */; };
+		E8FBD7D021DE8D97003F71D3 /* PersonDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FBD7CF21DE8D97003F71D3 /* PersonDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		E8FBD7C921DE8975003F71D3 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
 		E8FBD7CA21DE8975003F71D3 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
 		E8FBD7CB21DE8975003F71D3 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E8FBD7CE21DE8D97003F71D3 /* PersonDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDetailsViewController.h; sourceTree = "<group>"; };
+		E8FBD7CF21DE8D97003F71D3 /* PersonDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				E8FBD77E21DE5AC7003F71D3 /* PeopleListViewController.m */,
 				E8FBD7C521DE8137003F71D3 /* PeopleListTableViewDataSource.h */,
 				E8FBD7C621DE8137003F71D3 /* PeopleListTableViewDataSource.m */,
+				E8FBD7CE21DE8D97003F71D3 /* PersonDetailsViewController.h */,
+				E8FBD7CF21DE8D97003F71D3 /* PersonDetailsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				E8FBD7CD21DE8975003F71D3 /* Person+CoreDataProperties.m in Sources */,
 				E8FBD7B621DE601A003F71D3 /* PeopleProvider.m in Sources */,
 				E8FBD7B221DE5BDB003F71D3 /* NetworkManager.m in Sources */,
+				E8FBD7D021DE8D97003F71D3 /* PersonDetailsViewController.m in Sources */,
 				E8FBD7B921DE60BB003F71D3 /* StorageManager.m in Sources */,
 				E8FBD77C21DE5AC7003F71D3 /* AppDelegate.m in Sources */,
 				E8FBD7C721DE8137003F71D3 /* PeopleListTableViewDataSource.m in Sources */,
